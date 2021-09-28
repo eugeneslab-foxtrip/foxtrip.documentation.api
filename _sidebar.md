@@ -1,14 +1,15 @@
 <!-- docs/_sidebar.md -->
-
-
-* [HOME](./)
-
-* [Tutorials](./tutorials/index)
-  * [Tomcat](./tutorials/tomcat/index)
-  * [Cloud](./tutorials/cloud/index)
-  * [Java](./tutorials/java/index)
-
-* [About](./about/index)
-
-* [Contact](./contact/index)
-
+**API 1.0**
+- [Users]()
+    - [![](images/post_request.png)Registration](__user_registration.md)
+    - [![](images/post_request.png)Authorization](__user_auth.md)
+    - [![](images/get_request.png)Getting list of users](__user_list.md)
+    - [![](images/get_request.png)Getting data about user](__user_data.md)
+    - [![](images/put_request.png)Banning](__user_ban.md)
+    - [![](images/del_request.png)Deleting](__user_delete.md)
+- [Routes]()
+    - [![](images/get_request.png)List routes]()
+- [Tags]()
+    - [![](images/get_request.png)List tags]()
+- [Cities]()
+    - [![](images/get_request.png)List cities]()

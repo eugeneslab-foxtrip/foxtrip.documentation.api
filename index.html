@@ -7,8 +7,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
+  <title>FoxTrip API</title>
+
+  <!-- Theme: Simple Dark -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-  <title>Docsify Demo</title>
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+    :root {
+      --base-font-family: 'Montserrat';
+      /* --sidebar-nav-link-font-weight: 600; */
+      --sidebar-name-font-size: 8px;
+      --sidebar-width: 21rem;
+      --sidebar-nav-link-color--hover: #fff;
+      --sidebar-nav-link-text-decoration--hover: none;
+      --sidebar-nav-link-text-decoration--active: none;
+      --sidebar-nav-link-text-decoration: none;
+      --sidebar-nav-pagelink-background-image: ;
+      /* --sidebar-nav-pagelink-background-image--active: ;
+      --sidebar-nav-pagelink-background-image--collapse: ;
+      --sidebar-nav-pagelink-background-image--loaded: ; */
+    }
+  </style>
+
+
+
 </head>
 
 <body>
@@ -16,11 +40,16 @@
   <script>
     window.$docsify = {
       el: "#app",
-      repo: 'https://github.com/eugeneslab-taiga/foxtrip.documentation.api',
-      loadSidebar: true
+      loadSidebar: true,
+      subMaxLevel: 3
     }
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
 </body>
 
 </html>
