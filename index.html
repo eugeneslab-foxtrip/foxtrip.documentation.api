@@ -17,17 +17,20 @@
 
     :root {
       --base-font-family: 'Montserrat';
-      /* --sidebar-nav-link-font-weight: 600; */
+      --sidebar-nav-strong-color: #6c8eef;
       --sidebar-name-font-size: 8px;
-      --sidebar-width: 21rem;
+      --sidebar-width: 19rem;
+      --sidebar-nav-link-color: #a3acb9;
       --sidebar-nav-link-color--hover: #fff;
       --sidebar-nav-link-text-decoration--hover: none;
       --sidebar-nav-link-text-decoration--active: none;
       --sidebar-nav-link-text-decoration: none;
       --sidebar-nav-pagelink-background-image: ;
-      /* --sidebar-nav-pagelink-background-image--active: ;
-      --sidebar-nav-pagelink-background-image--collapse: ;
-      --sidebar-nav-pagelink-background-image--loaded: ; */
+      --sidebar-toggle-icon-width: 0;
+      --sidebar-toggle-width: 0;
+
+      --link-text-decoration: none;
+      --link-color: #6c8eef;
     }
   </style>
 
@@ -41,7 +44,13 @@
     window.$docsify = {
       el: "#app",
       loadSidebar: true,
-      subMaxLevel: 3
+      subMaxLevel: 2,
+
+      copyCode: {
+        buttonText: 'Copy',
+        errorText: 'Error',
+        successText: 'Copied'
+      }
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -49,6 +58,11 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+
+  <!-- docsify-tabs (latest v1.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs"></script>
 
 </body>
 

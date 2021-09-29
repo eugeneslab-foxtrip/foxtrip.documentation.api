@@ -1,4 +1,3 @@
-# Welcome to Docsify Page!
+# API reference
 
-This site was created using [**Docsify**](https://docsify.js.org), which is an open source documentation site generator, and imported in GitHub page. This site was created for [**Opensource.com**](https://opensource.com) demo.
-
+The FoxTrip API is organized around [REST](https://en.wikipedia.org/wiki/Representational_state_transfer). Our API has predictable resource-oriented URLs, accepts [form-encoded](https://en.wikipedia.org/wiki/POST_(HTTP)#Use_for_submitting_web_forms) request bodies, returns [JSON-encoded](https://www.json.org/json-en.html) responses, and uses standard HTTP response codes, authentication, and verbs.

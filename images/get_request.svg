@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="18" viewBox="0 0 38 18">
+  <g id="get_request" transform="translate(-1990 -2341)">
+    <path id="Path_47" data-name="Path 47" d="M8.769,0H29.231A8.608,8.608,0,0,1,38,8.438V9.563A8.608,8.608,0,0,1,29.231,18H8.769A8.608,8.608,0,0,1,0,9.563V8.438A8.608,8.608,0,0,1,8.769,0Z" transform="translate(1990 2341)" fill="#628d0a"/>
+    <text id="GET" transform="translate(2009 2354)" fill="#fff" font-size="11" font-family="Montserrat-Regular, Montserrat"><tspan x="-11.088" y="0">GET</tspan></text>
+  </g>
+</svg>
