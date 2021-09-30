@@ -1,12 +1,12 @@
-# Getting list of users
+# Getting list of users (19)
 
 Users who have privileges can send request list of registered users. To send request the host must have API key and role appropriate **admin** or **memeber**. 
 
 ````
-GET /api/v1/user-list/$pageNumber$ HTTP/1.1
+GET /api/v1?request=19&page=$pageNumber$ HTTP/1.1
 ````
 ### Arguments
-**pageNumber** - page number for request users. Every page contains 20 users. If a host requests page number more then exist, array block will be empty in response body.
+**page** - page number for request users. Every page contains 20 users. If a host requests page number more then exist, array block will be empty in response body.
 
 
 ### Response

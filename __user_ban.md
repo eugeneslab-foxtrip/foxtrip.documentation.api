@@ -1,13 +1,13 @@
-# Banning a user
+# Banning a user (16)
 
 A host with privileges may ban any user in the system. The request provides **PUT** method. To send this request it is necassary to have API key and permission **[mightBan](/__user_permissions?id=mightBan)**.
 
 ````
-PUT /api/v1/user-ban/$userId$ HTTP/1.1
+PUT /api/v1?request=16&id=$userId$ HTTP/1.1
 ````
 ### Arguments
 
-**userId** - User ID from database which data the host requests
+**id** - user ID from database
 
 ### Response
 
