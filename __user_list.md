@@ -3,22 +3,21 @@
 Users who have privileges can send request list of registered users. To send request the host must have API key and role appropriate **admin** or **memeber**. 
 
 ````
-GET /api/v1?request=19&page=$pageNumber$ HTTP/1.1
+GET /api/v1/request?t=19&page=1&limit=20 HTTP/1.1
+Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
 ````
 ### Arguments
-**page** - page number for request users. Every page contains 20 users. If a host requests page number more then exist, array block will be empty in response body.
+**page** - requierd field. Defines page number for request users. Every page contains 20 users. If a host requests page number more then exist, response will return **404 Not Found**
 
+**limit** - requierd field. Defines count of users which one page might contain  
 
 ### Response
 
-If request was succesfull the response will contain body with data in JSON format. For example:
+If request was succesfull the response will contain encripted data. Behind encripted data is user data in JSON format. For example:
 
 ```` json
 {
-    "pageNumber"        : "1",
-    "pageCount"         : "3"
-
-    [
+    "page": [
         {
             "id"        : "1",
             "role_id"   : "1",
@@ -40,8 +39,4 @@ If request was succesfull the response will contain body with data in JSON forma
 }
 ````
 
-Another way it may return:
-
-* **400 Bad request** 
-* **401 Unauthorized**
-* **403 Forbidden**
+Another way it may return: one of the error statuses

@@ -1,21 +1,23 @@
 <!-- docs/_sidebar.md -->
 **Introduction**
 - [![](images/mark.svg) Quick start]()
-- [![](images/mark.svg) API keys]()
+- [![](images/mark.svg) Authorization]()
+- [![](images/mark.svg) Notifications]()
+- [![](images/mark.svg) System events]()
 - [![](images/mark.svg) Errors]()
 
-**API**
-- [![](images/mark.svg)Statistic]()
-    - [![](images/get_request.svg) Request statistic]()
-- [![](images/mark.svg)Users](__user.md)
-    - [![](images/mark.svg)![](images/post_request.svg) Registration](__user_registration.md)
-    - [![](images/mark.svg)![](images/post_request.svg) Authorization](__user_auth.md)
+**API reference**
+- [Statistic](__statistic.md)
+    - [![](images/get_request.svg) Request statistic](__statistic_data.md)
+- [Users](__user.md)
+    - [![](images/post_request.svg) Registration](__user_registration.md)
+    - [![](images/post_request.svg) Authorization](__user_auth.md)
     - [![](images/get_request.svg) Getting list](__user_list.md)
     - [![](images/get_request.svg) Getting account](__user_data.md)
-    - [![](images/mark.svg)![](images/put_request.svg) Update account](__user_data_update.md)
+    - [![](images/put_request.svg) Update account](__user_data_update.md)
     - [![](images/put_request.svg) Banning](__user_ban.md)
-    - [![](images/mark.svg)![](images/put_request.svg) Permissions](__user_permissions.md)
-    - [![](images/mark.svg)![](images/del_request.svg) Deleting](__user_delete.md)
+    - [![](images/put_request.svg) Permissions](__user_permissions.md)
+    - [![](images/del_request.svg) Deleting](__user_delete.md)
 - [![](images/mark.svg)Routes](__route.md)
     - [![](images/mark.svg)![](images/post_request.svg) Create route]()
     - [![](images/mark.svg)![](images/get_request.svg) Getting route]()
