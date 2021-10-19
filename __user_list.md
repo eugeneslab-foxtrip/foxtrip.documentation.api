@@ -1,9 +1,9 @@
-# Getting list of users (19)
+# Getting list of users (10)
 
 Users who have privileges can send request list of registered users. To send request the host must have API key and role appropriate **admin** or **memeber**. 
 
 ````
-GET /api/v1/request?t=19&page=1&limit=20 HTTP/1.1
+GET /api/v1/request?t=10&page=1&limit=20 HTTP/1.1
 Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
 ````
 ### Arguments

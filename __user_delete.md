@@ -1,9 +1,9 @@
-# Deleting users (18)
+# Deleting users (11)
 
 A host with privileges may delete other users in the system. Hosts who has role **Member** cannot delete users who have role **Admin**. There are also restrictions according permissions list such as **[mightDeleteUsers](/__user_permissions?id=mightDeleteUsers)** .
 
 ````
-DELETE /api/v1/requests?t=18&id=$userId$ HTTP/1.1
+DELETE /api/v1/requests?t=11&id=$userId$ HTTP/1.1
 Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
 ````
 

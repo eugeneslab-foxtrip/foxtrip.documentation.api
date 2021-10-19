@@ -1,9 +1,9 @@
-# Getting account (18)
+# Getting account (11)
 
 This command provides **GET** request and as answer you are able to get full data about user. The user must be authorizated before sending this request, another way response will be as the code **401 Unauthorized**
 
 ````
-GET /api/v1/request?t=18&id=$userId$ HTTP/1.1
+GET /api/v1/request?t=11&id=$userId$ HTTP/1.1
 Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
 ````
 ### Arguments
