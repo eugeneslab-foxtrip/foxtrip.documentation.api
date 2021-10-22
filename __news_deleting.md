@@ -1,7 +1,7 @@
-# Deleting publication (31)
+# Deleting publication (20)
 
 ````
-DELETE /api/v1/request?t=31&id=1 HTTP/1.1
+DELETE /api/v1/request?t=20&id=1 HTTP/1.1
 Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
 ````
 ### Arguments

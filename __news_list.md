@@ -1,9 +1,9 @@
-# Getting news list (30)
+# Getting news list (21)
 
 Any user may requests news. The HTTP request has to contain header *Content-Language* which defines languege of content which reqiers. If there is no selected languege then the server will return the **404 Not Found** status
 
 ````
-GET /api/v1/request?t=30&page=1&limit=20&public=0 HTTP/1.1
+GET /api/v1/request?t=21&page=1&limit=20&public=0 HTTP/1.1
 Content-Language: CZ-cz
 ````
 ### Arguments
@@ -17,10 +17,14 @@ Content-Language: CZ-cz
 
 ```` json
 {
-        "page": [
+    "number": "158",
+
+    "page": 
+    [
         {
             "id"            : "1",
             "cover"         : "/album/lorem.png",
+            "datetime"      : "155748321874",
             "title"         : "Lorem Ipsum is simply dummy text of the printing",
             "content"       : "Lorem Ipsum has been the industry's standard dummy text",
             "publicated"    : "false"
@@ -29,6 +33,7 @@ Content-Language: CZ-cz
         {
             "id"            : "2",
             "cover"         : "http://127.0.0.1/album/contrary.png",
+            "datetime"      : "1557483218465",
             "title"         : "Contrary to popular belief, Lorem Ipsum...",
             "content"       : "Lorem Ipsum has been the industry's standard dummy text",
             "publicated"    : "true"
@@ -36,3 +41,5 @@ Content-Language: CZ-cz
     ]
 }
 ````
+
+The field *number* defines how many items database contains.
