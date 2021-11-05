@@ -1,12 +1,13 @@
 # Publication routes (32)
 
 ````
-PUT /api/v1/request?t=20&id=1 HTTP/1.1
+PUT /api/v1/request?t=32 HTTP/1.1
 Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
 ````
 ````json
 {
-    "publicated": "true"
+    "id"            : "1",
+    "publicated"    : "true"
 }
 ````
 

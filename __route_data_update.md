@@ -1,12 +1,15 @@
 # Update route (30)
+Users who have privileges can send this request to update a route. To send request the host must have API key and role appropriate `admin` or `memeber`.
 
+The HTTP request has to contain header *Content-Language* which defines languege (BCP47) of content which reqiers. If there is no selected languege then the server will return the **400 Bad Request** status.
 ````
-PUT /api/v1/request?t=30&id=1 HTTP/1.1
+PUT /api/v1/request?t=30 HTTP/1.1
 Content-Language: CZ-cz
 Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
 ````
 ````json
 {
+    "id": "1",
     "cover": "http://127.0.0.1/album/lorem.png",
     "title": "Lorem Ipsum is simply dummy text of the printing",
     "description": "Lorem Ipsum has been the industry's standard dummy text",
@@ -20,18 +23,6 @@ Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
     ]
 }
 ````
-
-### Publication route
-````
-PUT /api/v1/request?t=30&id=1 HTTP/1.1
-Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
-````
-````json
-{
-    "publicated": "true"
-}
-````
-
 
 ### Response
 The server will return **200 Ok** status if the request has been processed

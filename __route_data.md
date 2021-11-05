@@ -1,7 +1,11 @@
 # Getting route (30)
+ny user may requests a route. The HTTP request has to contain header *Content-Language* which defines languege (BCP47) of content which reqiers. If there is no selected languege or request asks about unpublicated route then the server will return the **404 Not Found** status. 
 
+If the request contains *Access-Token* header and the user doesn't have role lower then **Member**, the the server will return also unpublicated routes.
 ````
 GET /api/v1/request?t=30&id=1 HTTP/1.1
+Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
+Content-Language: cs-CZ
 ````
 
 ### Arguments

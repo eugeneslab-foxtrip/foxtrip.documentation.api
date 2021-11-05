@@ -1,9 +1,11 @@
 # Gettings routes (31)
-Any user may requests routes. The HTTP request has to contain header *Content-Language* which defines languege of content which reqiers. If there is no selected languege then the server will return the **404 Not Found** status
+Any user may requests routes. The HTTP request has to contain header *Content-Language* which defines languege (BCP47) of content which reqiers. If there is no selected languege then the server will return the **404 Not Found** status.
 
+If the request contains *Access-Token* header and the user doesn't have role lower then **Member**, the server will return publicated and unpublicated routes
 ```
 GET /api/v1/request?t=31&page=1&limit=20&public=1 HTTP/1.1
-Content-Language: CZ-cz
+Access-Token: 4eC39HqLyjWDarjtT1zdp7dc
+Content-Language: cs-CZ
 ```
 
 ### Arguments
@@ -11,7 +13,7 @@ Content-Language: CZ-cz
 
 **limit** - requier argument. This defines limiting results for one page
 
-**public** - this flag defines if to show only publicated routes. *1* - only publicated and *0* - only not publicated routes. If this argument is not defined then it returns publicated and not publicated routes together
+**public** - this flag defines if to show only publicated routes. *1* - only publicated and *0* - only not publicated routes. If this argument is not defined then it returns publicated and not publicated routes together if *Access-Token* is defined, another way it returns only publicated routes
 
 ### Searching filtr
 **title** - defines searching filtr by title or some phrases from title
@@ -28,8 +30,6 @@ GET /api/v1/request?t=31&page=1&limit=20&tags=1,2,3 HTTP/1.1
 ### Response
 ````json
 {
-    "number": "80",
-
     "page": 
     [
         {
@@ -50,5 +50,3 @@ GET /api/v1/request?t=31&page=1&limit=20&tags=1,2,3 HTTP/1.1
     ]
 }
 ````
-
-The field *number* defines how many items database contains.

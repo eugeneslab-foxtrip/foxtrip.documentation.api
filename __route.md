@@ -72,12 +72,22 @@
     - **sings** - defines addition information about the point. See also: [signs](__route?id=sings)
 
 ### Directions
+Directions show tips for users about what way the traveler should go next after a checkpoint which he rechied. Example for directions of the GPS track is below:
+
+<p style='text-align: center;'> <img src="images/checkpoints.svg" alt="Italian Trulli"></p> 
+
+An editor may choose one of the directions for each checkpoint:
+
 1. Straight (0 degrees)
 1. Turn left (~ -90 degrees)
 1. Keep left (> -90 degrees)
-1. Shrap left (< -90 degrees)
+1. Sharp left (< -90 degrees)
 1. Turn right (~ 90 degrees)
 1. Keep right (< 90 degrees)
 1. Sharp right (> 90 degrees)
 
+Numbers of the enumeration mathes with ID of direction
+
 ### Sings
+
+**Signs** - additional information for a tourist about checkpoints. It may be any signs which can help to choose a correct way to reach a next checkpoint, for example: tourist signs, plates with titles of cities and etc.

@@ -1,17 +1,19 @@
 <!-- docs/_sidebar.md -->
 **Introduction**
 - [![](images/mark.svg) Quick start]()
-- [![](images/mark.svg) Registration](_registration.md)
-- [![](images/mark.svg) Authorization](_authorization.md)
 - [![](images/mark.svg) Notifications]()
 - [Tags](_tags.md)
 - [![](images/mark.svg) Errors]()
 
 **API reference**
+- [![](images/post_request.svg) Registration](_registration.md)
+- [![](images/post_request.svg) Authorization](_authorization.md)
+- [![](images/mark.svg)![](images/post_request.svg) Authentication]()
 - [Users](__user.md)
     - [![](images/get_request.svg) Getting users](__user_list.md)
     - [![](images/get_request.svg) Getting account](__user_data.md)
     - [![](images/put_request.svg) Update account](__user_data_update.md)
+    - [![](images/mark.svg)![](images/put_request.svg) Changing role]()
     - [![](images/put_request.svg) Banning](__user_ban.md)
     - [![](images/put_request.svg) Permissions](__user_permissions.md)
     - [![](images/del_request.svg) Deleting user](__user_delete.md)
